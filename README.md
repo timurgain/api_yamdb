@@ -1,46 +1,63 @@
-API проекта Yamdb
-================
-## Проект собирает отзывы на различные произведения, с возможностью комментирования и оценки.
+# Yamdb, API-project
 
-#### В проекте используется Python 3, Django 2.2, Django Rest Framework и SQL.
+## Description
 
-## Как запустить проект:
+The project collects feedback on various works (music, movies, books), provides endpoints for commenting and rating.
+To access the API, the issue of a JWT token is connected. Pagination, throttling, permissions are also configured.
 
-###### Клонировать репозиторий и перейти в него в командной строке:
+## Technologies
 
-git clone https://github.com/dimkafaint/api_yamdb
+- Python 3;
+- Django REST Framework;
+- SQLlite.
 
+## Installation and launch
+
+Clone repository and navigate to folder on command line::
+
+```
+git clone ...
+```
+
+```
 cd api_yamdb
+```
 
-###### Cоздать и активировать виртуальное окружение:
+Create and activate virtual environment:
 
+```
 python3 -m venv venv
+```
 
+```
 source venv/bin/activate
+```
 
+```
 python3 -m pip install --upgrade pip
+```
 
-###### Установить зависимости из файла requirements.txt:
+Install dependencies from requirements.txt file:
 
+```
 pip install -r requirements.txt
+```
 
-###### Выполнить миграции:
+Run migrations:
 
-cd api_yamdb
-
+```
 python3 manage.py migrate
+```
 
-###### Наполнить базу данных.
+Launch the project:
 
-Запустить скрипт api_yamdb\script_csv_to_sql.py из папки проекта.
-
-###### Запустить проект:
-
+```
 python3 manage.py runserver
+```
 
-[Подробнее](http://127.0.0.1:8000/redoc/)
+[ReDoc](http://127.0.0.1:8000/redoc/)
 
-###### Авторы:
+## The authors:
 - [Храповицкий Дмитрий](https://github.com/dimkafaint)
 - [Кузнецов Андрей](https://github.com/HoodFast)
 - [Гайнутдинов Тимур](https://github.com/timurgain)
